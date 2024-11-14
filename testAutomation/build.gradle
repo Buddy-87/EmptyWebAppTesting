@@ -1,0 +1,16 @@
+plugins {
+	id 'java'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation project(':webdriver')  // Dependency on Selenium WebDriver module
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'  // Add testing library
+}
+
+test {
+	useJUnitPlatform()  // To enable JUnit 5 if using it
+}

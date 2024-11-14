@@ -1,0 +1,10 @@
+// Root build.gradle
+plugins {
+	id 'java'
+}
+
+allprojects {
+	repositories {
+		mavenCentral()
+	}
+}
