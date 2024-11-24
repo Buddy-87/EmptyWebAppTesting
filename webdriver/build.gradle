@@ -8,4 +8,9 @@ repositories {
 
 dependencies {
 	implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'  // Selenium dependency
+	implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+}
+
+tasks.withType(JavaExec) {
+	systemProperty 'webdriver.browsersCachePath', ext.browserDriversPath
 }

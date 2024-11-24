@@ -8,3 +8,11 @@ allprojects {
 		mavenCentral()
 	}
 }
+
+ext {
+	browserDriversPath = "${rootDir}/browserDrivers"
+}
+
+subprojects {
+	ext.browserDriversPath = rootProject.ext.browserDriversPath
+}
